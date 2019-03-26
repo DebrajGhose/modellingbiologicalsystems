@@ -29,7 +29,6 @@ subplot(1,2,1)
 
 %plot( particles(:,:,1) , particles(:,:,2)  );
 
-
 subplot(1,2,2)
 
 msds = mean(( particles(:,:,1).^2 + particles(:,:,2).^2 ),2);
