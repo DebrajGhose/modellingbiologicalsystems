@@ -3,14 +3,13 @@ close all
 
 %ODE solver
 
-totaltime = 10; %time in seconds
+totaltime = 200; %time in seconds
 dt = 0.01;
 
 timeaxis = [0:dt:(totaltime-dt)]';
 
 kon = 0.1667; %1/(uM.s)
 koff = 0.001; %1/s
-
 
 
 L = zeros(totaltime/dt,1);
@@ -41,13 +40,16 @@ subplot(1,3,1)
 plot(timeaxis,L);
 xlabel('Time (s)');ylabel('L (\mu M)')
 ylim([0 , axismax])
+axis square
 
 subplot(1,3,2)
 plot(timeaxis,R);
 xlabel('Time (s)');ylabel('R (\mu M)')
 ylim([0 , axismax])
+axis square
 
 subplot(1,3,3)
 plot(timeaxis,LR);
 xlabel('Time (s)');ylabel('LR (\mu M)')
 ylim([0 , axismax])
+axis square
