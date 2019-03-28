@@ -39,7 +39,6 @@ ylabel('MSD (\mu m^2)')
 
 %do a fit
 
-
 para = polyfit(timeaxis,msds,1);
 hold on
 plot(timeaxis, para(1)*timeaxis + para(2));
